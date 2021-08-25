@@ -172,6 +172,14 @@ function show(){
 
 
 pomoItem.onclick = ()=>{
+    theInner.classList.add("pause");
+    clearInterval(myTimer);
+    leftProgress.classList.remove("active");
+    rightProgress.classList.remove("active");
+
+    startBtn.textContent= "Start";
+    theInner.classList.remove("move");
+    second.textContent = "59";           
     
 
     if(pomoTime < 10){
@@ -183,7 +191,16 @@ pomoItem.onclick = ()=>{
 
 }
 shortItem.onclick = ()=>{
-    // minute.textContent = shortTime;
+    
+    theInner.classList.add("pause");
+    clearInterval(myTimer);
+    leftProgress.classList.remove("active");
+    rightProgress.classList.remove("active");
+
+    startBtn.textContent= "Start";
+    theInner.classList.remove("move");
+
+    second.textContent = "59";
 
     if(shortTime < 10){
         minute.textContent =  "0"+ shortTime;
@@ -192,7 +209,16 @@ shortItem.onclick = ()=>{
     }
 }
 longItem.onclick = ()=>{
-    minute.textContent = longTime;
+
+    theInner.classList.add("pause");
+    clearInterval(myTimer);
+    leftProgress.classList.remove("active");
+    rightProgress.classList.remove("active");
+
+    startBtn.textContent= "Start";
+    theInner.classList.remove("move");
+    second.textContent = "59";
+
 
     if(longTime < 10){
         minute.textContent =  "0"+ longTime;
