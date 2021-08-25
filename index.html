@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro app</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <h2>pomodoro</h2>
+        <div class="st-icon">
+            <i class="fas fa-cog"></i>
+        </div>
+        <div class="seting-form">
+            <div class="header">
+                <h3>Setings</h3>
+                <div class="close-icon">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+            
+            <div class="title">
+                TIME ( MINUTES )
+            </div>
+            <div class="inputs">
+                <div class="pomo-input">
+                    <span>pomodoro</span>
+                    <input type="number" value="25" class="pomo">
+                </div>
+                <div class="short-input">
+                    <span>short break</span>
+                    <input type="number" value="05" class="short">
+                </div>
+                <div class="long-input">
+                    <span>long break</span>
+                    <input type="number" value="50" class="long">
+                </div>
+            </div>
+
+            <div class="color-zone">
+                <div class="color-text">Color</div>
+                <div class="colors">
+                    <div class="color color-1 active">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <div class="color color-2">
+                        <i class="fas fa-check"></i>
+                    </div>
+                    <div class="color color-3">
+                        <i class="fas fa-check"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="applyBtn">Apply</div>
+        </div>
+
+        
+
+    </header>
+
+    <section>
+        <div class="menu">
+            <div class="pomodoro active"> <span class="option">pomodoro</span> </div>
+            <div class="short-break"><span class="option">short break</span></div>
+            <div class="long-break"> <span class="option">long break</span></div>
+        </div>
+        <div class="circular">
+            <div class="inner">
+                <div class="output">
+                    <div class="minute">25</div>
+                    <div class="dots">:</div>
+                    <div class="second">59</div>
+                </div>
+                <div class="startBtn">Start</div>
+            </div>
+            <div class="circle">
+    
+                <div class="bar left">
+                    <div class="progress"></div>
+                </div>
+    
+                <div class="bar right">
+                    <div class="progress"></div>
+                </div>
+    
+            </div>
+        </div>
+
+        
+    </section>
+
+    <div class="form">
+        
+    </div>
+    
+    
+    <script src="main.js"></script>
+</body>
+</html>

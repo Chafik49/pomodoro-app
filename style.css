@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+:root{
+    --currentTheme : rgb(163, 41, 88);
+    
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #012443;
+}
+header{
+    max-width: 300px;
+    height: 150px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    position: relative;
+}
+header div i{
+    color: rgb(182, 180, 180);
+    font-size: 20px;
+    cursor: pointer;
+}
+
+section {
+    width: 400px;
+    height: 400px;
+    /* background-color: brown; */
+    margin: 0 auto;
+    padding: 10px;
+    /* background-color: white; */
+}
+
+.menu {
+    display: flex;
+    background-color: #11052C;
+    padding: 8px 0px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    margin-bottom: 80px;
+}
+.menu div{
+    
+    padding: 10px 12px;
+    border-radius: 22px;
+    color: rgb(174, 167, 216);
+    transition: .4s;
+    
+    
+}
+.menu div span {
+    cursor: pointer;
+}
+.menu div.active{
+    background-color: var(--currentTheme);
+}
+.menu div.active.two{
+    background-color: rgb(7, 219, 247);
+    color: black;
+
+}
+.menu div.active.three{
+    background-color: rgb(247, 9, 187);
+    color: black;
+
+}
+
+
+
+@media (max-width:567px) {
+    section{
+        max-width: 350px;
+    }
+    .menu div span {
+        font-size: 13px;
+    }
+    
+}
+
+
+.setings-icon{
+    font-size: 22px;
+    color: gray;
+    
+}
+.setings-icon i{
+    cursor: pointer;
+}
+.seting-form{
+    width: 400px;
+    height: fit-content;
+    background-color: white;
+    position: absolute;
+    top: 180%;
+    opacity: 0;
+    padding:20px;
+    border-radius: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: opacity .5s ease;
+    
+}
+
+.seting-form.on{
+    opacity: 1;
+    z-index: 20;
+}
+
+@media (max-width:567px) {
+    .seting-form{
+        width: 300px;
+    }
+    
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(172, 170, 170);
+    padding-bottom: 10px;
+    
+}
+.header h3{
+    font-weight: 400;
+    color: #11052C ;
+}
+.header .close-icon{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    color: gray;
+    cursor: pointer;
+}
+.title{
+    display: flex;
+    padding: 10px 0;
+    letter-spacing: 3px;
+    font-size: 14px;
+    margin-top: 10px;
+    color: black;
+}
+.inputs{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    
+}
+.inputs > div input{
+    width: 100px;
+    padding:10px;
+    border: 1px solid gray;
+    margin-top: 10px;
+    background-color: rgb(182, 181, 181);
+    border-radius: 5px;
+}
+.inputs > div span{
+    font-size: 12px;
+    color: gray;
+    display: flex;
+
+}
+@media (max-width:567px) {
+    .seting-form{
+        width: 300px;
+    }
+    .inputs > div input{
+        width: 80px;
+    }
+    
+}
+.color-zone{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 25px;
+    color: black;
+}
+.colors{
+    display: flex;
+}
+.colors div {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin: 0 0 0 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.colors div i{
+    font-size: 12px;
+    opacity: 0;
+    color: black;
+    transition: opacity .4s;
+}
+.colors div.active i{
+    opacity: 1;
+}
+.color-1{
+    background-color: rgb(163, 41, 88);
+}
+.color-2{
+    background-color: rgb(7, 219, 247);
+}
+.color-3{
+    background-color: rgb(247, 9, 187);
+}
+
+.applyBtn{
+    color: white;
+    background-color: rgb(163, 41, 88);
+    position: absolute;
+    padding: 5px 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+.applyBtn.two{
+    background-color: rgb(7, 219, 247);
+}
+.applyBtn.three{
+    background-color: rgb(247, 9, 187);
+
+}
+
+
+/* Main Section  */
+
+
+.circular{
+    width: 100px;
+    height: 100px;
+    margin: 100px auto;
+    position: relative;
+    transform: scale(2);
+    /* border: 1px solid rgb(10, 3, 78); */
+    border-radius: 100%;
+    box-shadow:  0 0 10px rgb(64, 61, 107);
+
+    
+}
+
+.circular .inner{
+    width: 90px !important; 
+    height: 90px;
+    /* background-color: #11052C; */
+    /* background-color: blue; */
+    z-index: 10;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 100% !important;
+    cursor: pointer;
+    
+    
+}
+.inner.move{
+    background-color: transparent;
+}
+
+
+.output {
+    display: flex;
+    /* background-color: red; */
+    justify-content: center;
+    margin-top: 30px;
+}
+.output div{
+    margin: 0 5px;
+    color: gray;
+    font-size: 14px;
+}
+.inner .startBtn{
+    font-size: 12px;
+    color: gray;
+    text-align: center;
+    margin-top: 12px;
+    
+}
+.circular .bar{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgb(192, 189, 191); */
+    border-radius: 100%;
+    clip: rect(0px , 100px,100px,50px);
+}
+.circle .bar .progress{
+    
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: var(--currentTheme);
+    border-radius: 100%;
+    clip: rect(0px , 50px,100px,0px);
+}
+
+.circle .left .progress.active{
+    z-index: 1;
+    animation: left 2s linear both;
+
+
+}
+
+@keyframes left {
+    100%{
+        transform: rotate(180deg);
+    }
+    
+}
+.circle .right{
+    transform: rotate(180deg);
+    
+}
+
+.circle .right .progress.active{
+
+    z-index: 1;
+    animation: right 2s linear both;
+    animation-delay: 2s;
+}
+@keyframes right {
+    100%{
+        transform: rotate(180deg);
+    }
+    
+}
