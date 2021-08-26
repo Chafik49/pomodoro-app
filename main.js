@@ -297,6 +297,9 @@ applyBtn.onclick = ()=>{
         })
 
     }
+    removeActive();
+    pomoItem.classList.add("active");
+    pomoItem.click();
     
 
 }
