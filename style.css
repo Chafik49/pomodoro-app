@@ -162,7 +162,7 @@ section {
     padding:10px;
     border: 1px solid gray;
     margin-top: 10px;
-    background-color: rgb(182, 181, 181);
+    background-color: rgb(219, 219, 219);
     border-radius: 5px;
 }
 .inputs > div span{
@@ -271,7 +271,7 @@ section {
     
 }
 .inner.move{
-    background-color: transparent;
+    background-color: rgb(8, 8, 66);
 }
 
 
