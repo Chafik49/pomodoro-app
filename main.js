@@ -87,7 +87,9 @@ options.forEach(o=>{
 })
 
 let firstSecond = parseInt(second.textContent);
-var firstMinute = pomoTime;
+// var firstMinute = pomoTime;
+
+var firstMinute =  parseInt(minute.textContent);
 
 
 
@@ -115,10 +117,13 @@ theInner.onclick = function(){
             leftProgress.style.animationPlayState="running";
             rightProgress.style.animationPlayState="running";
             leftProgress.classList.add("active");
-            leftProgress.style.animationDuration = `${firstMinute*29}s`;
+            // leftProgress.style.animationDuration = `${firstMinute*29}s`;
+            leftProgress.style.animationDuration = parseInt(minute.textContent)*29 + "s";
             rightProgress.classList.add("active");
-            rightProgress.style.animationDelay = `${firstMinute*29}s`;
-            rightProgress.style.animationDuration = `${firstMinute*30}s`;
+            // rightProgress.style.animationDelay = `${firstMinute*29}s`;
+            rightProgress.style.animationDelay = parseInt(minute.textContent)*29+"s";
+            // rightProgress.style.animationDuration = `${firstMinute*30}s`;
+            rightProgress.style.animationDuration = parseInt(minute.textContent)*30+"s";
 
         }
         
@@ -231,11 +236,11 @@ applyBtn.onclick = ()=>{
 
     setingForm.classList.remove("on");
     pomoTime = parseInt(pomoInput.value);
-    console.log(pomoTime);
+    
     shortTime = parseInt(shortInput.value);
-    console.log(shortTime)
+    
     longTime = parseInt(longInput.value);
-    console.log(longTime);
+    
 
     if(pomoTime < 10){
         minute.textContent =  "0"+ pomoTime;
