@@ -165,8 +165,9 @@ function show(){
             startBtn.textContent= "Start";
             theInner.classList.remove("move");
 
-        
-                        
+            applyBtn.click();
+
+                   
         }
                 
         
@@ -174,7 +175,6 @@ function show(){
             
 }
     
-
 
 pomoItem.onclick = ()=>{
     theInner.classList.add("pause");
